@@ -25,7 +25,3 @@ else:
 first_input = input("Введите строки, которые хотите 'склеить' :\n")
 second_input = input()
 print(f"Ответ: {first_input + second_input}")
-
-
-
-

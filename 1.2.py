@@ -3,12 +3,11 @@
 Переведите время в часы, минуты и секунды и выведите в формате чч:мм:сс.
 Используйте форматирование строк.
 """
-flag = True
-while flag:
+while True:
     time = (input("Введите время в секундах:\n"))
     if time.isdigit():
-        flag = False
         time = int(time)
+        break
 hours = time // 3600
 minutes = (time - hours * 3600) // 60
 seconds = time - hours * 3600 - minutes * 60

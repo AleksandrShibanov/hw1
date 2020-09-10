@@ -4,16 +4,13 @@
 Для решения используйте цикл while и арифметические операции.
 """
 Max = 0
-flag = True
-while flag:
+while True:
     n = input("Введите целое положительное число n:\n")
     if n.isdigit() and int(n) > 0:
-        flag = False
         n = int(n)
+        break
 while n > 0:
     if n % 10 > Max:
         Max = n % 10
     n //= 10
 print(f"Максимальная цифра в числе равна {Max}")
-
-
