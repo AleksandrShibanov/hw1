@@ -10,4 +10,4 @@ def user_info_input(first_name, last_name, birth_year, city, email, phone_number
     print(f"Имя: {first_name}, Фамилия: {last_name}, Год рождения: {birth_year}, Город проживания: {city}, Почта: {email}, Номер телефона: {phone_number}")
 
 
-user_info_input(first_name="Aleksandr",last_name="Shibanov", birth_year="2001", city="Moscow", email="qwerty@gmail.com", phone_number="+1234567890")
+user_info_input(last_name="Shibanov", first_name="Aleksandr", email="qwerty@gmail.com", phone_number="+1234567890", birth_year="2001", city="Moscow")

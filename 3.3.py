@@ -5,11 +5,8 @@
 """
 
 
-def my_func(*args):
-    my_list = list(args)
-    first_max = max(my_list)
-    my_list.remove(max(my_list))
-    return first_max + max(my_list)
+def my_func(a, b, c):
+    return sum((a, b, c)) - min(a, b, c)
 
 
 first = input("Введите первое число:\n")
@@ -19,3 +16,5 @@ try:
     print(f"Сумма наибольших двух аргументов: {my_func(float(first), float(second), float(third))}")
 except ValueError:
     print("Вы ввели не числа!")
+
+
