@@ -1,0 +1,6 @@
+1         line
+second line
+the                    third line
+Greetings, my friend!
+Здравствуй, приятель!
+Hello                                     World!
