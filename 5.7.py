@@ -27,7 +27,7 @@ try:
         counter = 0
         try:
             for line in r_file:
-                if float(line.split()[2]) - float(line.split()[3]) > 0:
+                if float(line.split()[2]) - float(line.split()[3]) >= 0:
                     profit_sum += float(line.split()[2]) - float(line.split()[3])
                     counter += 1
                 profit_dict[line.split()[0]] = round(float(line.split()[2]) - float(line.split()[3]), 3)

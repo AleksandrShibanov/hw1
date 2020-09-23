@@ -20,7 +20,7 @@ def sum_of_lessons(lesson_str):
     numbers_list = lesson_str.split()
     i = 0
     while i < len(numbers_list):
-        if numbers_list[i] != '—':
+        if not numbers_list[i] in {'-', '—'}:
             numbers_list[i] = int(numbers_list[i][:numbers_list[i].index("("):])
             i += 1
         else:
