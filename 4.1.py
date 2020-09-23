@@ -9,6 +9,8 @@ import sys
 def func(time, money_per_hour, prize):
     return float(time) * float(money_per_hour) + float(prize)
 
-
-_, a, b, c = sys.argv
-print(func(a, b, c))
+_, a, b, c, *_ = sys.argv
+try:
+    print(func(a, b, c))
+except ValueError:
+    print("Ошибка Ввода!")
